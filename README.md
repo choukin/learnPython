@@ -97,3 +97,4 @@
 
  [] 争取每天学习一节
  [] [python 的数字](https://m.runoob.com/python3/python3-number.html)
+ [] [JavaScript 工程师的 Python 指南](https://luckrnx09.com/python-guide-for-javascript-engineers/zh-cn/about-the-book)
