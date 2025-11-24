@@ -96,5 +96,100 @@
 # 学习计划
 
  [] 争取每天学习一节
+ 
  [] [python 的数字](https://m.runoob.com/python3/python3-number.html)
+
  [] [JavaScript 工程师的 Python 指南](https://luckrnx09.com/python-guide-for-javascript-engineers/zh-cn/about-the-book)
+
+ [] [python文档](https://docs.python.org/zh-cn/3.13/index.html)
+
+
+
+
+## 修改文件为可执行文件
+
+```sh
+chmod +x hello_world.py
+```
+
+
+### 查看python 安装位置
+
+```sh
+which python3
+# /opt/homebrew/bin/python3
+```
+
+## 安装项目中依赖多个安装包
+
+```sh
+pip3 install -r requirements.txt
+```
+
+## 安装某个包时临时制定源
+
+```sh
+pip install package_name -i
+```
+
+- [清华大学](https://pypi.tuna.tsinghua,edu.cn/simple)
+- [阿里云](https://mirrors.aliyun.com/pypi/simple/)
+- [中国科学技术大学](https://pypi.mirrors.ustc.edu.cn/simple/)
+- [豆瓣](https://pypi.douban.com/simple/)
+
+## anaconda 使用
+
+### 创建新环境
+
+```sh
+conda create -n {myenv} python=3.8
+```
+
+### 激活环境
+
+```sh
+conda activate myenv
+```
+
+### 停用环境
+
+```sh
+conda deactivate 
+```
+
+### 列出所有环境
+
+```sh
+conda info -e 
+#/ 或者
+conda env list
+```
+
+### 删除环境
+
+```sh
+conda remove --name myenv --all
+```
+
+### 包管理
+
+```sh
+# 安装
+conda install package_name
+
+# 安装制定包
+conda install package_name=2.0.1
+
+# 更新包
+conda update package_name
+
+# 卸载包
+conda remove package_name
+
+# 查看安装的包
+conda list
+
+# 搜索包
+conda search package_name
+
+```
